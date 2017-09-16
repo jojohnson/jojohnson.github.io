@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Sam's Handy Care</title>
-        
-          <meta charset="utf-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         
+        <title>Sam's Handy Care</title>
+               
         <style>
             *{
             box-sizing: border-box;
@@ -16,109 +16,119 @@
                 margin: 0;
             }
             
-            #header{
-                height: 23vh;
+            header{
+                height: 25vh;
+                background-image: url(toolbelt-wood.jpeg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-size:cover;
             }
             
-            #header-bar{
-                margin-bottom: 4px;
-                background-color: red;
-                vertical-align: middle;
+            #name-bar{
                 position: relative;
-                text-align: right;
-                font-family: sans-serif;
+                display: inline-block;
+                top: 5vh;
+                background-color: red;
+                text-align: center;
+                font-family: Helvetica, sans-serif;
                 font-size: 25px;
                 color: white;
-                padding-right: 4vw;
+                width: 50%;              
             }
-            
+                
+            #trans-box{
+                position: absolute;
+                top: 0;
+                right: 10vw;
+                background-color: rgba(245,245,245,0.8);
+                height: 25vh;
+                width: 28vw;
+                margin-left: 10px;
+            }
+
             #logo{
-                height: 17vh;
-                position: relative;
-                padding-left: 4vw;
-                padding-top: 1vh;
+                display: block;
+                margin: 10px auto;           
+                height: 22vh;
             }
             
             #phone{
-                position: absolute;
+                position: relative;
+                padding: 20px 0px;
+                font-family: Helvetica, sans-serif;
                 font-size: 30px;
+                font-weight: bold;
                 color: red;
-                right: 0;
-                margin: 20px 4vw;
-                top: 4vh;
             }
             
             #area{
-                position: absolute;
-                font-size: 18px;
-                font-style: oblique;
-                color: darkgray;
-                right: 0;
-                margin: 60px 4vw;
-                top: 4vh;
-            }
-                    
-            #navimg{
-                height: 7vh;
-                position: absolute;
-                top: 16vh;
-                right: 0;
-                margin-right: 4vw;
-                z-index: -1
-                }
-            
-            #banner{
                 position: relative;
-                padding: 5px;
-                height: 15vh;
-                background-image: url(toolbelt-wood.jpeg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                }
-            
-            #srv-block{
-                height: 53vh;
-                background-color: beige;
-                }
+                font-family: Helvetica, sans-serif;
+                font-size: 18px;
+                font-style: italic;
+                color: dimgray
+            }
             
             #slogan{
-                padding: 2vh;
-                font-size: 30px;
-                font-style: oblique;
-                text-align: center;
-                color: red;           
+                position: relative;
+                padding: 20px 0px;
+                font-family: Helvetica, sans-serif;
+                font-size: 28px;
+                font-style: italic;
+                text-align: center;         
             }
             
-            #srv-head{
-                background-color: black;
-                color: white;
-                font-family: sans-serif;
-                font-size: 20px;
-                padding-left: 5vw;
+            #block-left{
+                background-color: beige;
+                width: 50%;
+                float: left;
+                text-align: center;
+                position: relative;
+                vertical-align: middle;
+                padding: 20px;
+            }
+            
+            #block-right{
+                background-color: beige;
+                width: 50%;
+                float: right;
+                position: relative;
+                padding: 20px 20px 20px 40px;
+                vertical-align: middle;     
+            }
+            
+            .item{
+                border-style: solid;
+                border-width: 2px;
+            }
+           
+            .subhead{
+                position: relative;
+                font-family: Helvetica, sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                padding: 10px 0px 10px 10px;
             }
             
             ul.c{
                 list-style-type: square;
-                padding-left: 15vw;
             }
             
             li{
-                font-family: sans-serif;
+                font-family: Helvetica, sans-serif;
+                font-size: 16px;
                 padding-left: 1vw;
-                line-height: 4vh;
+                line-height: 22px;
             }
-            .subheads{
-                font-family: sans-serif;
-                font-style: bold;
-                font-size: 22px;
-                padding-left: 5vw;
+       
+            .container{
+                padding-left: 40px;
             }
             
-            
-            .item{
-                border-style: solid;
-                border-width: 2px;           
+            .container1{
+                display: inline-block;
+                position: relative;
+                padding: 20px;
             }
             
             .testimonial{
@@ -127,8 +137,7 @@
                 font-size: 20px;
                 padding: 2vw 10vw;
             }
-            
-            
+                 
             #footer{
                 position: relative;
                 padding: 5px;
@@ -136,32 +145,31 @@
                 background-image: url(toolbelt-wood.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: bottom left;
+                background-position: center;
                 }
-            
-            
+                    
         </style>       
     </head>
     
     <body>
-        <header id="header">
-            <div id="header-bar">SAM'S HANDY CARE</div>
-            <img id="logo" src="SHC_logo.png"/>
-            <br/>
-            <div id="phone">(402) 208-8642</div>
-            <div id="area">Serving the local Omaha, NE area</div>
-            <nav>
-                <img id="navimg" src="mobile-nav.png"/>
-            </nav>
-        </header>
-    
-        <div id="banner"></div>
-        
-        <div id="srv-block">
-            <div id="slogan">Top-notch work at a reasonable price!</div>
+        <header>
+            <div id="name-bar">SAM'S HANDY CARE</div>
             
-            <div id="srv-head">Most Popular Services:</div>
-            <br/>
+            <div id="trans-box">
+                <img id="logo" src="SHC_logo.png"/>           
+            </div>
+        </header>
+       
+    <div>   
+        <div id="block-left">
+            <div id="phone">Call (402) 208-8642</div>
+            <div id="area">* Serving the local Omaha, NE area *</div>
+            <div id="slogan">Top-notch work at a reasonable price!
+            </div>
+        </div>
+        
+        <div id="block-right">
+            <div class="subhead">Most Popular Services:</div>
             <ul class="c">
                 <li>Home Improvements &amp; Repairs</li>
                 <li>Lawn &amp; Shrub Care</li>
@@ -169,14 +177,15 @@
                 <li>Light Hauling</li>
                 <li>Small Electrical Work</li>
                 <li>Minor Auto Repair Work</li>     
-                <li>Snow Plowing</li>            
+                <li>Snow Plowing</li>
             </ul>
-            </div>
-            <br/>
+        </div>
+    </div> 
         
-            <div class="subheads">Recent Projects</div>
+        <div class="container1">
+            <div class="subhead">Recent Projects</div>
         <br/>
-        <br/>
+        <div>
             <div class="container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -191,7 +200,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <center><img src="garage-addition.jpg" alt="Garage Addition" style="height:100%;"></center>
+        <center><img src="garage-addition.jpg" alt="Garage Addition" style="width:100%;"></center>
         <div class="carousel-caption">
           <h3>Garage Addition</h3>
           <br/>
@@ -199,7 +208,7 @@
       </div>
 
       <div class="item">
-          <center><img src="porch-light.jpg" alt="Porch Light Installation" style="height:100%;"></center>
+          <center><img src="porch-light.jpg" alt="Porch Light Installation" style="width:100%;"></center>
         <div class="carousel-caption">
           <h3>Porch Light Installation</h3>
           <br/>
@@ -207,7 +216,7 @@
       </div>
     
       <div class="item">
-          <center><img src="cement-landing.jpg" alt="Cement Landing Installation" style="height:100%;"></center>
+          <center><img src="cement-landing.jpg" alt="Cement Landing Installation" style="width:100%;"></center>
         <div class="carousel-caption">
           <h3>Cement Landing Installation</h3>
           <br/>
@@ -215,7 +224,7 @@
       </div>
 
       <div class="item">
-          <center><img src="steps.jpg" alt="Cement Wall and Steps Repair" style="height:100%;"></center>
+          <center><img src="steps.jpg" alt="Cement Wall and Steps Repair" style="width:100%;"></center>
         <div class="carousel-caption">
           <h3>Cement Wall and Steps Repair</h3>
           <br/>
@@ -223,13 +232,13 @@
       </div>
     
       <div class="item">
-          <center><img src="snow-plowing.jpg" alt="Snow Plowing Services" style="height:100%;"></center>
+          <center><img src="snow-plowing.jpg" alt="Snow Plowing Services" style="width:100%;"></center>
         <div class="carousel-caption">
             <h2>Snow Plowing Services</h2>
+            <h3>Call for quote &amp; to arrange service <br/> (402) 208-8642</h3>
           <br/>
         </div>
-      </div>
-        
+      </div>      
     </div>
 
     <!-- Left and right controls -->
@@ -241,16 +250,14 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-</div>
-      
-        <br/>
-        <br/>
-    
-        <div>
-            <br/>
-        <div class="subheads">Testimonials</div>
-            <br/>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+    <div class="container1">
+        <div class="subhead">Testimonials</div>
+        
         <div class="testimonial">
             "I needed to get a few repairs done around the house before relatives arrived in town for the holidays. Sam's Handy Care did a great job in a timely manner!"
             <br/>
@@ -265,13 +272,11 @@
             Earl P.
             </div>  
         </div>
-        <br/>
-        <br/>
 
       <div id="footer"></div>
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
     </body>
 </html>
