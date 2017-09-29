@@ -17,11 +17,17 @@
             }
             
             header{
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100vw;
                 height: 25vh;
                 background-image: url(toolbelt-wood.jpeg);
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-size:cover;
+                border: solid 1px;
+                z-index: 100;
             }
             
             #name-bar{
@@ -48,8 +54,12 @@
 
             #logo{
                 display: block;
-                margin: 10px auto;           
+                margin: 12px auto;           
                 height: 22vh;
+            }
+            
+            #headerplaceholder{
+                height: 25vh;
             }
             
             #phone{
@@ -158,6 +168,7 @@
     </head>
     
     <body>
+        <div id="headerplaceholder">
         <header>
             <div id="name-bar">SAM'S HANDY CARE</div>
             
@@ -165,6 +176,7 @@
                 <img id="logo" src="SHC_logo.png"/>           
             </div>
         </header>
+            </div>
        
     <div id="main">   
         <div id="block-left">
