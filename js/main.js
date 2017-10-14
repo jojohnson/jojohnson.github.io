@@ -18,8 +18,10 @@ jQuery(function($) {
 	$(window).on('scroll', function(){
 		if( $(window).scrollTop()>slideHeight ){
 			$('.main-nav').addClass('navbar-fixed-top');
+            $(".headerSpace").addClass("headerFixed");
 		} else {
 			$('.main-nav').removeClass('navbar-fixed-top');
+            $(".headerSpace").removeClass("headerFixed");
 		}
 	});
 	
@@ -54,7 +56,7 @@ jQuery(function($) {
 	};
 
 	$('#tohash').on('click', function(){
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
 		return false;
 	});
 	
@@ -126,7 +128,7 @@ $(document).ready(function() {
   //Set the carousel options
   $('#quote-carousel').carousel({
     pause: true,
-    interval: 4000,
+    interval: 9000,
   });
 });
     
@@ -143,7 +145,7 @@ $(document).ready(function() {
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
 		}).done(function(data){
-			form_status.html('<p class="text-success">Thank you for contacting me. I will reply as soon as possible.</p>').delay(3000).fadeOut();
+			form_status.html('<p class="text-success">Thank you for contacting me. I will reply as soon as possible.</p>').delay(9000).fadeOut();
 		});
 	});
 
