@@ -100,7 +100,7 @@ section {
 }
 
 .heading {
-  padding-bottom:90px;
+  padding-bottom: 90px;
 }
 
 .preloader {
@@ -632,6 +632,7 @@ section {
 
 #portfolio .folio-item {
   position: relative;
+	border: 3px solid #fff; 
 }
 
 #portfolio .overlay {
@@ -1107,8 +1108,8 @@ section {
 /*--Quote Carousel--*/
 #quote-carousel 
 {
-  padding: 0 10px 30px 10px;
-  margin-top: 30px;
+  padding: 0 45px 10px 50px;
+  margin-top: 10px;
 }
 
 /* Control buttons  */
@@ -1147,11 +1148,7 @@ section {
 {
   background: #333333;
 }
-#quote-carousel img
-{
-  width: 250px;
-  height: 100px
-}
+
 /* End carousel */
 
 .item blockquote {
