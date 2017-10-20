@@ -8,7 +8,7 @@
       background-color: black;
       color: white;
       font-family: 'Lucida Grande', Verdana, Arial;
-      font-size: 14px;
+      font-size: 15px;
 		background-image: url(blue-spots.jpg);
      	background-repeat: no-repeat;
 		text-align: center	
@@ -199,10 +199,14 @@
     }
 	  
 	  #tbutton {
-		  font-size: 13px;
+		  font-size: 20px;
 		  font-weight: bold;
+		  border-radius: 6px; 
 	  }
 	  
+	  #bfaces {
+		  font-size: 17px;
+	  }
 	  
   </style>
   <script type="text/javascript" charset="utf-8">
@@ -273,9 +277,10 @@
 	  <p>Click the 'Toggle Shape' button to transform the nested cubes into one big spinning ring. Continue clicking the 'Toggle Shape' button and watch the panels and words glide and transition smoothly in and out of position.</p> 
 		
     <p>Click the 'Backfaces Visible' checkbox to turn backfaces on and off.</p>
+	  <br/>
 
-    <div><button id="tbutton" onclick="toggleShape()">Toggle Shape</button></div>
-    <div><input type="checkbox" id="backfaces" onclick="toggleBackfaces()" checked=""><label for="backfaces">Backfaces Visible</label></div>
+    <div><button type="button" id="tbutton" onclick="toggleShape()">Toggle Shape</button></div>
+    <div><input type="checkbox" id="backfaces" onclick="toggleBackfaces()" checked=""><label id="bfaces" for="backfaces">Backfaces Visible</label></div>
   </div>
 
   <div id="container">
