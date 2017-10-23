@@ -279,48 +279,6 @@ section {
 }
 
 /*************************
-********Service CSS*******
-**************************/
-
-.service-icon {
-  border-radius: 4px;
-  color: #fff;
-  display: inline-block;
-  font-size: 36px;
-  height: 90px;
-  line-height: 90px;
-  width: 90px;  
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-
-.our-services .col-sm-4:hover .service-icon {
-  background-color: #333;
-}
-
-.our-services .col-sm-4 {
-  border-right:1px solid #f2f2f2;
-  border-bottom:1px solid #f2f2f2;
-  padding-bottom: 50px;
-}
-
-.our-services .col-sm-4:nth-child(4), 
-.our-services .col-sm-4:nth-child(5), 
-.our-services .col-sm-4:nth-child(6) {
-  border-bottom:0;
-  padding-top: 60px;
-}
-
-.our-services .col-sm-4:nth-child(3), 
-.our-services .col-sm-4:nth-child(6) {
-  border-right:0;
-}
-
-.service-info h3 {
-  margin-top: 35px;
-}
-
-/*************************
 ********About CSS*******
 **************************/
 #about-us {
@@ -373,12 +331,12 @@ section {
     text-align: center;
     margin: 0;
     padding: 3em 0;
-    p {
-        margin: 0 auto;
-        font-size: 16px;
-        max-width: 400px;
-    }
 }
+
+ 	p {
+        font-size: 15px;
+    }
+
 
 /*==================================
     TIMELINE
@@ -749,17 +707,8 @@ section {
   margin-left: -17px;
 }
 
-/*************************
-*********Team CSS*********
-**************************/
-#team {
-  padding-top: 0;
-}
 
-.team-members {
-  margin-bottom: 25px;
-}
-
+/*--Social Media Icons--*/
 .social-icons {
   margin-top:30px;
   text-align: center;
@@ -797,312 +746,7 @@ section {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-
-.team-member {
-  text-align: center;
-  color: #333;
-  font-size: 14px;
-}
-
-.team-member:hover .social-icons ul li a.facebook {
-  background-color: #3b5999;
-}
-.team-member:hover .social-icons ul li a.twitter {
-  background-color: #2ac6f7;
-}
-.team-member:hover .social-icons ul li a.dribbble {
-  background-color: #ff5b92;
-}
-.team-member:hover .social-icons ul li a.linkedin {
-  background-color: #036dc0;
-}
-.team-member:hover .social-icons ul li a.rss {
-  background-color: #ff6b00;
-}
-
-#team .img-responsive {
-  width: 100%;
-}
-
-.member-info h3 {
-  margin-top: 35px;
-}
-
-.member-info h4 {
-  font-size: 14px;
-  margin-bottom: 15px;
-  color: #999;
-}
-
-
-/*************************
-*******Features CSS*******
-**************************/
-#features {
-  text-align: center;
-  background-image: url(../images/features-bg.jpg);
-}
-
-#features i {
-  font-size: 48px;
-}
-
-#features h3 {
-  margin-top: 15px;
-  font-size: 30px;
-  margin-bottom: 7px;
-  color: #fff;
-}
-
-#features .slider-overlay {
-  opacity: 0.8;
-}
-
-
-/*************************
-*****Pricing Table CSS****
-**************************/
-.pricing-table {
-  text-align: center;
-}
-
-.single-table {
-  padding: 30px 20px 20px;
-  border:1px solid #f2f2f2;
-}
-
-.single-table h3 {
-  margin-top: 0;
-  padding: 0;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.price {
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.price span {
-  font-size: 14px;
-  line-height: 14px;
-}
-
-.single-table ul {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
-}
-
-.single-table ul li {
-  line-height: 30px;
-}
-
-.single-table.featured {  
-  color: #fff;
-}
-
-.single-table.featured h3 { 
-  color: #fff;
-}
-
-.single-table.featured .btn.btn-primary {
-  background-color: #fff;
-}
-
-/*************************
-********Twitter CSS*******
-**************************/
-#twitter {
-  background-image: url(../images/twitter-bg.jpg);
-}
-
-#twitter > div {
-  text-align: center;
-  position: relative;
-}
-
-#twitter-carousel {
-  position: relative;
-  z-index: 15
-}
-
-.twitter-icon {
-  position: relative;
-  z-index: 15;
-  color: #fff;
-}
-
-.twitter-icon .fa-twitter {
-  font-size: 24px;
-  height: 64px;
-  width: 64px;
-  line-height: 65px;
-  border-radius: 50%; 
-  position: relative;
-}
-
-.twitter-icon .fa-twitter:after {
-  position: absolute;
-  content: "";
-  border-width: 8px;
-  border-style: solid;
-  left: 24px;
-  bottom: -14px;
-}
-
-#twitter-carousel .item {
-  padding: 0 55px;
-}
-
-#twitter-carousel .item a {
-  color: #fff;
-}
-
-.twitter-icon h4 {
-  text-transform: uppercase;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  color: #fff;
-}
-
-.twitter-left-control, 
-.twitter-right-control {
-  position: absolute;
-  top: 50%;
-  color: #fff;
-  border: 1px solid #fafafa;
-  height:34px;
-  width: 34px;
-  line-height: 31px;
-  margin-top: -17px;
-  font-size: 18px;
-  border-radius: 50%;
-  z-index: 15
-}
-
-.twitter-left-control {
-  left: 80px;
-} 
-
-.twitter-right-control {
-  right: 80px
-}
-
-.twitter-left-control:hover, .twitter-right-control:hover {
-  color: #fff;
-}
-
-
-/*************************
-**********Blog CSS********
-**************************/
-
-.post-thumb {
-  position: relative;
-}
-
-.post-icon {
-  position: absolute;
-  top:10px;
-  right:10px;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  border-radius:4px;
-  text-align: center;
-  color: #fff;
-  font-size: 12px;
-}
-
-.post-meta {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: #fff;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.post-meta span {
-  margin-right: 16px;
-}
-
-#post-carousel .carousel-indicators {
-  bottom: 3px;
-  left: 90%;
-}
-
-.blog-left-control, .blog-right-control {
-  position: absolute;
-  top: 45%;
-  width: 30px;
-  text-align: center;
-  color: rgba(255,255,255,.7);
-  font-size: 36px;
-}
-
-.blog-left-control {
-  left: 0;
-}
-
-.blog-right-control {
-  right: 0;
-}
-
-.blog-left-control:hover, .blog-right-control:hover {
-  color: #fff;  
-}
-
-.entry-header h3 a {
-  line-height: 30px;
-}
-
-.entry-header .date, 
-.entry-header .cetagory {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.entry-header .date:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom:-22px;
-  width: 20px;
-  height: 3px;
-}
-
-.entry-content {
-  font-size: 14px;
-}
-
-.load-more {
-  display:block;
-  text-align: center;
-  margin-top: 70px;
-}
-
-.btn-loadmore {
-  border: 1px solid #f2f2f2;
-  color: #666666;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 125px;
-  text-transform: uppercase;
-}
-
-.btn-loadmore:hover {
-  color:#fff;
-}
-
-
+/*--/Social Media Icons--*/
 
 
 /*--Quote Carousel--*/
@@ -1168,7 +812,6 @@ section {
 }
 
 
-
 /**
   MEDIA QUERIES
 */
@@ -1215,10 +858,6 @@ section {
   padding-bottom: 0;
 }
 
-#google-map {
-  height: 350px;
-}
-
 #contact-us {
   background-image:url(../images/contact_code-desk-pict.jpg);
   padding-bottom: 90px; 
@@ -1228,26 +867,9 @@ section {
   padding-top: 95px;
 }
 
-.form-control {
-  background-color: transparent;
-  border-color: rgba(255,255,255,.1);
-  height: 50px;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-textarea.form-control {
-  min-height: 180px;
-  resize:none;
-}
-
-.form-group {
-  margin-bottom: 30px;
-}
-
 .contact-info {
   padding-left:70px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 ul.address {
@@ -1255,6 +877,7 @@ ul.address {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 16px;
 }
 
 .contact-info ul li {
@@ -1263,15 +886,6 @@ ul.address {
 
 .contact-info ul li a {
   color: #fff;
-}
-
-.btn-submit {
-  display: block;
-  padding: 12px;
-  width: 100%;
-  color: #fff;
-  border:0;
-  margin-top: 40px;
 }
 
 #footer {
