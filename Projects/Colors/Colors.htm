@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+        <title>How COLORS Make You Feel</title>
+        <style>
+			*{
+                box-sizing: border-box;
+            }
+			
+         	body{
+				margin: auto;
+                text-align: center;
+            }
+			
+			#header{
+				background-image: url(colored-roses.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+				background-position: center;
+				height: 30vh;		
+			}
+            
+			.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+				background-color: black;
+				border: 1px solid gray;
+			}
+			
+			.descRed{
+				background-image: url(red.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+		
+			.descOrange{
+				background-image: url(orange.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+		
+			.descYellow{
+				background-image: url(yellow.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+					
+			.descGreen{
+				background-image: url(green.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+		
+			.descBlue{
+				background-image: url(blue.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+			
+			.descPurple{
+				background-image: url(purple.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+		
+			.descWhite{
+				background-image: url(white.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: black;		
+			}
+		
+			.descGray{
+				background-image: url(gray.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+					
+			.descBlack{
+				background-image: url(black.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+		
+			.descBrown{
+				background-image: url(brown.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+			
+			.descPink{
+				background-image: url(pink.jpeg);
+				background-size: cover;
+				background-position: center;
+				position: relative;
+				vertical-align: middle;
+				font-size: 30px;
+                color: white;		
+			}
+			
+        </style>
+    </head>
+    <body>
+       <div id="header"></div>
+        
+			<h1>How COLORS Make You Feel</h1>
+       
+		<div id="accordion">
+        <h1>RED</h1>
+			<div class="descRed">
+				The color RED evokes feelings of warmth, love and passion.
+			</div>
+			
+        <h1>ORANGE</h1>
+			<div class="descOrange">The color ORANGE exhibits feelings of energy and excitement.
+			</div>
+        
+        <h1>YELLOW</h1>
+			<div class="descYellow">The color YELLOW generates feelings of happiness and boldness.</div>
+        
+        <h1>GREEN</h1>
+			<div class="descGreen">The color GREEN gives feelings of good health and nature.
+			</div>
+
+        
+        <h1>BLUE</h1>
+			<div class="descBlue">The color BLUE evokes feelings of clean, soothing freshness.</div>
+        
+        <h1>PURPLE</h1>
+			<div class="descPurple">The color PURPLE exhibits feelings of high quality and luxury.</div>
+        
+        <h1>WHITE</h1>
+			<div class="descWhite">The color WHITE generates feelings of openness and purity.
+			</div>
+        
+        <h1>GRAY</h1>
+			<div class="descGray">The color GRAY gives feelings of calm and neutrality.</div>
+        
+        <h1>BLACK</h1>
+			<div class="descBlack">The color BLACK evokes feelings of strength and cohesion.</div>
+        
+        <h1>BROWN</h1>
+			<div class="descBrown">The color BROWN exhibits feelings of comfort and home.</div>
+        
+        <h1>PINK</h1>
+			<div class="descPink">The color PINK generates feelings of femininity and softness.</div>
+		</div>
+          
+        <script
+          src="https://code.jquery.com/jquery-2.2.4.js"
+          integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+          crossorigin="anonymous"></script>
+        <script
+          src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+          integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+          crossorigin="anonymous"></script>
+        
+        <script>
+            $("#container").draggable({
+                opacity: 0.5,
+                grid: [50, 50],
+                revert: "invalid"
+            });
+            
+            $("#drop").droppable({
+                drop: function(event, ui){
+                    $(ui.draggable).css("background-color", "orange");
+                }
+            });
+            
+            $("#drop2").droppable({
+                drop: function(event, ui){
+                    $(ui.draggable).css("background-color", "red");
+                }
+            });
+            
+            $("#container, #drop, #drop2, #box").resizable();
+            
+            $("#list").selectable();
+            $("#list2").sortable();
+            
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        </script>
+    
+</body></html>
