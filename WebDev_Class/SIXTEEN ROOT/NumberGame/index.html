@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <h1>Number Game - Guess the number I'm thinking of</h1>
+        <label>Your Guess: </label>
+        <input id="guess" />
+        <button id="submit" type="button">Guess!</button>
+        <span id="count"></span>
+        <div id="result"></div>
+        <br/>
+        <br/>
+        <label>Min #:</label>
+        <input id="min" value="1"/>
+        <label>Max #:</label>
+        <input id="max" value="100"/>
+        <button id="reset" type="button">Reset the Game!</button>
+        <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+        <script>
+            function randomNumber(start, end){
+                start = parseInt(start);
+                end = parseInt(end);
+                //figure out range of start to end
+                var range = Math.abs(end-start);
+                //run code to generate random number
+                var answer = parseInt(Math.random() * range + start);
+                //return random number
+                return answer;
+            }
+            
+            //generating random number when page loads
+            var min = 1;
+            var max = 100;
+            var computerNumber = randomNumber(min, max);
+            console.log(computerNumber);
+            var guessCount = 0;
+            
+            //On click of our guess button
+            $("#submit").click(function(event){
+                //read in users guess
+                var userGuess = $("#guess").val();
+                if(userGuess < min || userGuess > 100){
+                    $("#result").text("Guess should be between 1 and 100!")
+                }else{
+                    guessCount++;
+                    $("#count").text("Guess #"+guessCount);
+                    var diff = Math.abs(userGuess - computerNumber);
+                    //compare users guess to computer number
+                    if(userGuess == computerNumber){
+                        //if correct dispaly a different message
+                        $("#result").text("You guessed it correctly!");
+                    }else if(diff <= 5){
+                        $("#result").text("You're very close!");
+                    }else if(diff <= 15){
+                        $("#result").text("You're getting warmer!");
+                    }else{
+                        //if wrong display a message
+                        $("#result").text("Keep trying!");
+                    }
+                }
+            });
+            
+            //click on reset button
+            $("#reset").click(function(event){
+                //read in min and max
+                var newMin = $("#min").val();
+                var newMax = $("#max").val();
+                //change min and max variables to user entered values
+                min = newMin;
+                max = newMax;
+                //come up with a new computerNumber
+                computerNumber = randomNumber(min, max);
+                //wipe out result text
+                $("#result").text("");
+                //wipe out counter text
+                $("#count").text("");
+                //reset counter
+                guessCount = 0;
+                //wipe out number in input
+                $("#guess").val("");
+            });
+        </script>
+    </body>
+</html>

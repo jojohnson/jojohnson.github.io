@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                width: 100%;
+                height: 100vh;
+                perspective: 1000px;
+            }
+            
+            .card{
+                display: inline-block;
+                transform-style: preserve-3d;
+                width: 20%;
+                height: 50vh;
+                position: relative;
+                box-sizing: border-box;
+                color: white;
+                transition: transform 2s;
+                vertical-align: top;
+            }
+            
+            .flipOver{
+                transform: rotateY(-180deg);
+        
+            }
+            
+            .front{
+                position: absolute;
+                width: 30vw;
+                height: 45vh;
+                background-size: cover;
+				border: 1px solid black;
+				border-radius: 5px;
+            }
+            
+            .back{
+                position: absolute;
+                width: 30vw;
+                height: 45vh;
+                transform: translateZ(-1px) rotateY(180deg);
+                background-color: lightgray;
+				border: 1px solid black;
+				border-radius: 5px;
+            }
+            
+            #fcard1{
+                background-image: url(https://cdn.pixabay.com/photo/2017/03/14/17/43/mountain-2143877_960_720.jpg);
+            }
+            
+            #fcard2{
+                background-image: url(http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-Kirkjufe_3374110a.jpg);
+            }
+            
+            #fcard3{
+                background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/170407220916-04-iconic-mountains-matterhorn-restricted-super-169.jpg);
+            }
+            
+            #fcard4{
+                background-image: url(https://s11.favim.com/orig/170110/aesthetic-landscape-nature-red-Favim.com-4986666.jpeg);
+            }
+			
+			#fcard5{
+                background-image: url(https://cdn.pixabay.com/photo/2017/03/14/17/43/mountain-2143877_960_720.jpg);
+            }
+            
+            #fcard6{
+                background-image: url(http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-Kirkjufe_3374110a.jpg);
+            }
+            
+            #fcard7{
+                background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/170407220916-04-iconic-mountains-matterhorn-restricted-super-169.jpg);
+            }
+            
+            #fcard8{
+                background-image: url(https://s11.favim.com/orig/170110/aesthetic-landscape-nature-red-Favim.com-4986666.jpeg);
+            }
+			
+			#fcard9{
+                background-image: url(https://cdn.pixabay.com/photo/2017/03/14/17/43/mountain-2143877_960_720.jpg);
+            }
+            
+            #fcard10{
+                background-image: url(http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-Kirkjufe_3374110a.jpg);
+            }
+            
+            #fcard11{
+                background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/170407220916-04-iconic-mountains-matterhorn-restricted-super-169.jpg);
+            }
+            
+            #fcard12{
+                background-image: url(https://s11.favim.com/orig/170110/aesthetic-landscape-nature-red-Favim.com-4986666.jpeg);
+            }
+			
+			#fcard13{
+                background-image: url(https://cdn.pixabay.com/photo/2017/03/14/17/43/mountain-2143877_960_720.jpg);
+            }
+            
+            #fcard14{
+                background-image: url(http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-Kirkjufe_3374110a.jpg);
+            }
+            
+            #fcard15{
+                background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/170407220916-04-iconic-mountains-matterhorn-restricted-super-169.jpg);
+            }
+            
+            #fcard16{
+                background-image: url(https://s11.favim.com/orig/170110/aesthetic-landscape-nature-red-Favim.com-4986666.jpeg);
+            }
+			
+			#fcard17{
+                background-image: url(https://cdn.pixabay.com/photo/2017/03/14/17/43/mountain-2143877_960_720.jpg);
+            }
+            
+            #fcard18{
+                background-image: url(http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-Kirkjufe_3374110a.jpg);
+            }
+            
+            #fcard19{
+                background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/170407220916-04-iconic-mountains-matterhorn-restricted-super-169.jpg);
+            }
+            
+            #fcard20{
+                background-image: url(https://s11.favim.com/orig/170110/aesthetic-landscape-nature-red-Favim.com-4986666.jpeg);
+            }
+			
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="card">
+                <div class="front" id="fcard1"></div>
+                <div class="back">
+                    <h1>Mountains</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard2"></div>
+                <div class="back">
+                    <h1>Mountains2</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard3"></div>
+                <div class="back">
+                    <h1>Mountains3</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard4"></div>
+                <div class="back">
+                    <h1>Mountains4</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+			    <div class="card">
+                <div class="front" id="fcard5"></div>
+                <div class="back">
+                    <h1>Mountains</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard6"></div>
+                <div class="back">
+                    <h1>Mountains2</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard7"></div>
+                <div class="back">
+                    <h1>Mountains3</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard8"></div>
+                <div class="back">
+                    <h1>Mountains4</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard9"></div>
+                <div class="back">
+                    <h1>Mountains</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard10"></div>
+                <div class="back">
+                    <h1>Mountains2</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard11"></div>
+                <div class="back">
+                    <h1>Mountains3</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard12"></div>
+                <div class="back">
+                    <h1>Mountains4</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard13"></div>
+                <div class="back">
+                    <h1>Mountains</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard14"></div>
+                <div class="back">
+                    <h1>Mountains2</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard15"></div>
+                <div class="back">
+                    <h1>Mountains3</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard16"></div>
+                <div class="back">
+                    <h1>Mountains4</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard17"></div>
+                <div class="back">
+                    <h1>Mountains</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard18"></div>
+                <div class="back">
+                    <h1>Mountains2</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard19"></div>
+                <div class="back">
+                    <h1>Mountains3</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front" id="fcard20"></div>
+                <div class="back">
+                    <h1>Mountains4</h1>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <script
+          src="https://code.jquery.com/jquery-2.2.4.js"
+          integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+          crossorigin="anonymous"></script>
+        <script>
+            $(".card").click(function(){
+                $(this).toggleClass("flipOver");
+            });
+        </script>
+    </body>
+</html>

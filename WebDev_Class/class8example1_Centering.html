@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                text-align: center;
+                background-color: yellow;
+                height: 20vh;
+                line-height: 20vh;
+                vertical-align: middle;
+                text-decoration: underline overline line-through;
+            }
+            
+            body{
+                text-align: center;
+            }
+            
+            #box{
+                background-color: red;
+                height: 20vh;
+                width: 20vh;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+            
+            span{
+                text-decoration: underline;
+            }
+            
+            .center{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            #header{
+                background-color: green;
+                height: 20vh;
+            }
+            
+            #main{
+                background-color: blue;
+                height: 20vh;
+            }
+            
+            .clear{
+                height: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Header 1</h1>
+        <span>Span Text</span>
+        
+        <div id="box">Text in a div</div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div id="header"></div>
+        <div id="main">
+            <div class="clear"></div>
+            <h2>Sixteen Design</h2>
+        </div>
+    </body>
+</html>

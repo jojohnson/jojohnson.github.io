@@ -78,7 +78,12 @@
                 text-align: center;         
             }
             
+            #main{
+                display: flex;
+            }
+            
             #block-left{
+                order: 1;
                 background-color: beige;
                 width: 50%;
                 float: left;
@@ -89,11 +94,12 @@
             }
             
             #block-right{
+                order: 2;
                 background-color: beige;
                 width: 50%;
                 float: right;
                 position: relative;
-                padding: 20px 20px 20px 40px;
+                padding: 20px;
                 vertical-align: middle;     
             }
             
@@ -118,17 +124,17 @@
                 font-family: Helvetica, sans-serif;
                 font-size: 16px;
                 padding-left: 1vw;
-                line-height: 22px;
+                line-height: 24px;
             }
        
-            .container{
-                padding-left: 40px;
-            }
-            
             .container1{
                 display: inline-block;
                 position: relative;
                 padding: 20px;
+            }
+            
+            .container{
+                padding-left: 30px;
             }
             
             .testimonial{
@@ -141,7 +147,7 @@
             #footer{
                 position: relative;
                 padding: 5px;
-                height: 7vh;
+                height: 10vh;
                 background-image: url(toolbelt-wood.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -160,10 +166,10 @@
             </div>
         </header>
        
-    <div>   
+    <div id="main">   
         <div id="block-left">
             <div id="phone">Call (402) 208-8642</div>
-            <div id="area">* Serving the local Omaha, NE area *</div>
+            <div id="area">Serving the local Omaha, NE area</div>
             <div id="slogan">Top-notch work at a reasonable price!
             </div>
         </div>
@@ -185,7 +191,6 @@
         <div class="container1">
             <div class="subhead">Recent Projects</div>
         <br/>
-        <div>
             <div class="container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -203,7 +208,8 @@
         <center><img src="garage-addition.jpg" alt="Garage Addition" style="width:100%;"></center>
         <div class="carousel-caption">
           <h3>Garage Addition</h3>
-          <br/>
+            <br/>
+            <br/>
         </div>
       </div>
 
@@ -211,7 +217,8 @@
           <center><img src="porch-light.jpg" alt="Porch Light Installation" style="width:100%;"></center>
         <div class="carousel-caption">
           <h3>Porch Light Installation</h3>
-          <br/>
+            <br/>
+            <br/>
         </div>
       </div>
     
@@ -219,7 +226,8 @@
           <center><img src="cement-landing.jpg" alt="Cement Landing Installation" style="width:100%;"></center>
         <div class="carousel-caption">
           <h3>Cement Landing Installation</h3>
-          <br/>
+            <br/>
+            <br/>
         </div>
       </div>
 
@@ -227,16 +235,16 @@
           <center><img src="steps.jpg" alt="Cement Wall and Steps Repair" style="width:100%;"></center>
         <div class="carousel-caption">
           <h3>Cement Wall and Steps Repair</h3>
-          <br/>
+            <br/>
+            <br/>
         </div>
       </div>
     
       <div class="item">
           <center><img src="snow-plowing.jpg" alt="Snow Plowing Services" style="width:100%;"></center>
         <div class="carousel-caption">
-            <h2>Snow Plowing Services</h2>
-            <h3>Call for quote &amp; to arrange service <br/> (402) 208-8642</h3>
-          <br/>
+            <h3>Call for Quote</h3>
+            <br/>
         </div>
       </div>      
     </div>
@@ -253,7 +261,6 @@
             </div>
         </div>
         </div>
-    </div>
         
     <div class="container1">
         <div class="subhead">Testimonials</div>

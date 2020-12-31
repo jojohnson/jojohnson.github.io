@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <title>Sam's Handy Care</title>
+               
+        <style>
+            *{
+            box-sizing: border-box;
+            }
+            
+            body{
+                margin: 0;
+            }
+            
+            header{
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 25vh;
+                background-image: url(toolbelt-wood.jpeg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-size:cover;
+                border: solid 1px;
+                z-index: 100;
+            }
+            
+            #name-bar{
+                position: relative;
+                display: inline-block;
+                top: 5vh;
+                background-color: red;
+                text-align: center;
+                font-family: Helvetica, sans-serif;
+                font-size: 25px;
+                color: white;
+                width: 50%;              
+            }
+                
+            #trans-box{
+                position: absolute;
+                top: 0;
+                right: 10vw;
+                background-color: rgba(245,245,245,0.8);
+                height: 25vh;
+                width: 28vw;
+                margin-left: 10px;
+            }
+
+            #logo{
+                display: block;
+                margin: 12px auto;           
+                height: 22vh;
+            }
+            
+            #headerplaceholder{
+                height: 25vh;
+            }
+            
+            #phone{
+                position: relative;
+                padding: 20px 0px;
+                font-family: Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+                color: red;
+            }
+            
+            #area{
+                position: relative;
+                font-family: Helvetica, sans-serif;
+                font-size: 18px;
+                font-style: italic;
+                color: dimgray
+            }
+            
+            #slogan{
+                position: relative;
+                padding: 20px 0px;
+                font-family: Helvetica, sans-serif;
+                font-size: 28px;
+                font-style: italic;
+                text-align: center;         
+            }
+            
+            #main{
+                display: flex;
+            }
+            
+            #block-left{
+                order: 1;
+                background-color: beige;
+                width: 50%;
+                float: left;
+                text-align: center;
+                position: relative;
+                vertical-align: middle;
+                padding: 20px 10px;
+            }
+            
+            #block-right{
+                order: 2;
+                background-color: beige;
+                width: 50%;
+                float: right;
+                position: relative;
+                padding: 20px;
+                vertical-align: middle;     
+            }
+            
+            .item{
+                border-style: solid;
+                border-width: 2px;
+            }
+           
+            .subhead{
+                position: relative;
+                font-family: Helvetica, sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                padding: 10px 0px 10px 10px;
+            }
+            
+            ul.c{
+                list-style-type: square;
+            }
+            
+            li{
+                font-family: Helvetica, sans-serif;
+                font-size: 16px;
+                padding-left: 1vw;
+                line-height: 24px;
+            }
+       
+            .container1{
+                display: inline-block;
+                position: relative;
+                padding: 20px;
+            }
+            
+            .container{
+                padding-left: 30px;
+            }
+            
+            .testimonial{
+                font-family: serif;
+                font-style: italic;
+                font-size: 20px;
+                padding: 2vw 10vw;
+            }
+                 
+            #footer{
+                position: relative;
+                padding: 5px;
+                height: 10vh;
+                background-image: url(toolbelt-wood.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                }
+                    
+        </style>       
+    </head>
+    
+    <body>
+        <div id="headerplaceholder">
+        <header>
+            <div id="name-bar">SAM'S HANDY CARE</div>
+            
+            <div id="trans-box">
+                <img id="logo" src="SHC_logo.png"/>           
+            </div>
+        </header>
+            </div>
+       
+    <div id="main">   
+        <div id="block-left">
+            <div id="phone">Call (402) 208-8642</div>
+            <div id="area">Serving the local Omaha, NE area</div>
+            <div id="slogan">Top-notch work at a reasonable price!
+            </div>
+        </div>
+        
+        <div id="block-right">
+            <div class="subhead">Most Popular Services:</div>
+            <ul class="c">
+                <li>Home Improvements &amp; Repairs</li>
+                <li>Lawn &amp; Shrub Care</li>
+                <li>Cement &amp; Masonry Work</li>
+                <li>Light Hauling</li>
+                <li>Small Electrical Work</li>
+                <li>Minor Auto Repair Work</li>     
+                <li>Snow Plowing</li>
+            </ul>
+        </div>
+    </div> 
+        
+        <div class="container1">
+            <div class="subhead">Recent Projects</div>
+        <br/>
+            <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <center><img src="garage-addition.jpg" alt="Garage Addition" style="width:100%;"></center>
+        <div class="carousel-caption">
+          <h3>Garage Addition</h3>
+            <br/>
+            <br/>
+        </div>
+      </div>
+
+      <div class="item">
+          <center><img src="porch-light.jpg" alt="Porch Light Installation" style="width:100%;"></center>
+        <div class="carousel-caption">
+          <h3>Porch Light Installation</h3>
+            <br/>
+            <br/>
+        </div>
+      </div>
+    
+      <div class="item">
+          <center><img src="cement-landing.jpg" alt="Cement Landing Installation" style="width:100%;"></center>
+        <div class="carousel-caption">
+          <h3>Cement Landing Installation</h3>
+            <br/>
+            <br/>
+        </div>
+      </div>
+
+      <div class="item">
+          <center><img src="steps.jpg" alt="Cement Wall and Steps Repair" style="width:100%;"></center>
+        <div class="carousel-caption">
+          <h3>Cement Wall and Steps Repair</h3>
+            <br/>
+            <br/>
+        </div>
+      </div>
+    
+      <div class="item">
+          <center><img src="snow-plowing.jpg" alt="Snow Plowing Services" style="width:100%;"></center>
+        <div class="carousel-caption">
+            <h3>Call for Quote</h3>
+            <br/>
+        </div>
+      </div>      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+            </div>
+        </div>
+        </div>
+        
+    <div class="container1">
+        <div class="subhead">Testimonials</div>
+        
+        <div class="testimonial">
+            "I needed to get a few repairs done around the house before relatives arrived in town for the holidays. Sam's Handy Care did a great job in a timely manner!"
+            <br/>
+            <br/>
+            Delores B.
+            </div>
+            
+            <div class="testimonial">
+            "I was snowed in and I couldn't get out of my driveway. Sam's Handy Care was there within the hour and cleared my driveway, sidewalk and steps."
+            <br/>
+            <br/>
+            Earl P.
+            </div>  
+        </div>
+
+      <div id="footer"></div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+    </body>
+</html>
